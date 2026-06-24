@@ -1,0 +1,26 @@
+# Dependency directories (Heavy files jo npm install se aati hain)
+node_modules/
+jspm_packages/
+
+# Environment variables (SECURITY RISK! Isme aapki Neon DB ki URL keys hain, ise kabhi push mat karna)
+.env
+.env.local
+.env.*.local
+
+# Prisma specific files
+/prisma/migration_lock.toml
+
+# Logs (Debug karne ke liye bante hain, git par nahi chahiye)
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Diagnostic reports (Crashed dumps)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Operating System Files (Mac/Windows ki unwanted cache files)
+.DS_Store
+Thumbs.db
