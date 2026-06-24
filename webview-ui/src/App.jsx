@@ -6,8 +6,7 @@ function App() {
   const [nextCursor, setNextCursor] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  // Kyunki server abhi bhi port 2000 par hi chalega
-  const API_BASE_URL = 'http://localhost:2000/api/products';
+  const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api/products`;
 
   const fetchProducts = async (isInitial = false, currentCursor = null) => {
     setLoading(true);
